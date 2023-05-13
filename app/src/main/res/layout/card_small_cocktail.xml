@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <com.geronso.pearler.widgets.BottomCropImageView
+        android:id="@+id/small_cocktail_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitEnd"
+        android:background="@drawable/background_small_cocktail"
+        android:clipToOutline="true" />
+
+    <TextView
+        android:id="@+id/small_cocktail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Cocktail" />
+</LinearLayout>

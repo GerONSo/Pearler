@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geronso.pearler">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
+    <application
+        android:name=".main.di.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_black"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_black"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pearler"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".login.view.RecoverPasswordActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".login.view.EmailConfirmationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".login.view.SetNameActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pearler" />
+        <activity
+            android:name=".registration.view.RegistrationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pearler" />
+        <activity
+            android:name=".login.view.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pearler">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pearler" />
+    </application>
+
+</manifest>

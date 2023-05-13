@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="?attr/actionBarSize"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/fragment_pearl_scene">
+
+        <ImageButton
+            android:id="@+id/pearlPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:background="@color/colorBackground"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/pearlCocktailName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif-thin"
+            android:hint="@string/enter_a_cocktail_name"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/editTextSelectionColor"
+            android:textCursorDrawable="@null"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/pearlRating"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pearlPhoto" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/addPearlCocktailVariants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/pearlCocktailName"
+            tools:itemCount="10"
+            tools:listitem="@layout/card_small_cocktail_variant" />
+
+        <TextView
+            android:id="@+id/tv_pearl_opinion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="Leave us your opinion:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/pearlRating"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pearlCocktailName" />
+
+        <RatingBar
+            android:id="@+id/pearlRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:numStars="5"
+            android:stepSize="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_pearl_opinion" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_pearl_review"
+            style="@style/Theme.Pearler.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/review_hint"
+            android:textAlignment="textStart"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintBottom_toTopOf="@id/pearlPublish"
+            app:layout_constraintTop_toBottomOf="@id/pearlRating">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pearlReview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_review_edit_text"
+                android:gravity="top|start"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:maxLines="15"
+                android:minLines="7"
+                android:textColorHighlight="@color/editTextSelectionColor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.geronso.pearler.widgets.LoadingButton
+            android:id="@+id/pearlPublish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="52dp"
+            android:text="@string/publish"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.core.widget.NestedScrollView>

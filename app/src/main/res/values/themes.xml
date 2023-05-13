@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Pearler" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">#80FFFFFF</item>
+        <item name="android:navigationBarColor">#80FFFFFF</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/sans_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/Theme.Pearler.Toolbar.Button.Navigation</item>
+    </style>
+    <style name="Theme.Pearler.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Pearler.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Pearler.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="Theme.Pearler.EditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+    </style>
+
+    <style name="Theme.Pearler.SearchEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusBottomEnd">@dimen/search_edit_text_corner</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/search_edit_text_corner</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/search_edit_text_corner</item>
+        <item name="boxCornerRadiusTopStart">@dimen/search_edit_text_corner</item>
+    </style>
+
+    <style name="Theme.Pearler.CocktailTextView" parent="Theme.Pearler">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/sans_regular</item>
+    </style>
+
+    <style name="Theme.Pearler.CocktailBigTextView" parent="Theme.Pearler.CocktailTextView">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="Theme.Pearler.CocktailMediumTextView" parent="Theme.Pearler.CocktailTextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme.Pearler.Toolbar.Button.Navigation" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="tint">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.Pearler.Snackbar" parent="Theme.Pearler">
+        <item name="android:background">@drawable/snackbar_background</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:text">"Try again"</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:elevation">16dp</item>
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Pearler</string>
+    <string name="pearler">Pearler</string>
+    <string name="welcome">Welcome to the world of cocktails</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="btn_login_text">Go</string>
+    <string name="or">OR</string>
+    <string name="register">Register</string>
+    <string name="welcome_registration">Create a new account:</string>
+    <string name="btn_register_text">Register</string>
+
+    <string name="home_title">Feed</string>
+    <string name="search_title">Find your best</string>
+    <string name="friends_title">Friends</string>
+    <string name="profile_title">Profile</string>
+    <string name="name">Name</string>
+    <string name="set_your_name">Set your name</string>
+    <string name="next">Next</string>
+    <string name="follow">Follow</string>
+    <string name="review_hint">Write a review:</string>
+    <string name="enter_a_cocktail_name">Enter a cocktail name</string>
+    <string name="publish">Publish</string>
+    <string name="pearl_title">Pearl this</string>
+    <string name="recent_pearls">Recent pearls</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="pearl">Pearl</string>
+    <string name="recipe">Recipe</string>
+    <string name="feed_empty_pearl_list_text">Seems like there is nothing here yet</string>
+    <string name="empty_pearl_list_text">Seems like there is no pearls here yet</string>
+    <string name="edit_bio_profile_text">Tap edit icon to add bio</string>
+    <string name="send">Send</string>
+    <string name="resend">Resend</string>
+    <string name="email_try_again">Email wasn\'t sent, try again</string>
+    <string name="confirmation_text">Check your email\nto confirm registration</string>
+    <string name="confirmation_explanation">Once you confirm you will be able to complete registration</string>
+    <string name="confirmation_explanation_text"><u>I received nothing</u></string>
+    <string name="help_text">If you can’t find the email check the spam folder or try to send email again</string>
+    <string name="help_button_text"><u>Send again</u></string>
+    <string name="reload">Reload</string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+    <string name="enter_your_email">Enter your email</string>
+</resources>
